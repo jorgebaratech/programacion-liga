@@ -2,8 +2,12 @@
 public class Clasificacion {
 	Liga liga;
 	EquipoClasificacion[] listaEquipo;
-	
+	private Equipo equipo;
 	private int victorias, derrotas, empates, golesFavor,golesContra, diferenciaEquipo;
+	private Jornada jornada;
+	private Partido partido;
+	
+	
 	
 	public Clasificacion(Liga liga) 
 	{
@@ -72,6 +76,30 @@ public class Clasificacion {
 
 	public void setDiferenciaEquipo(int diferenciaEquipo) {
 		this.diferenciaEquipo = diferenciaEquipo;
+	}
+
+	public Equipo getEquipo() {
+		return equipo;
+	}
+
+	public void setEquipo(Equipo equipo) {
+		this.equipo = equipo;
+	}
+
+	public Jornada getJornada() {
+		return jornada;
+	}
+
+	public void setJornada(Jornada jornada) {
+		this.jornada = jornada;
+	}
+
+	public Partido getPartido() {
+		return partido;
+	}
+
+	public void setPartido(Partido partido) {
+		this.partido = partido;
 	}
 
 	
